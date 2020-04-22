@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="tynder.min.js"></script>
+        <style>
+            body {
+                width: 100px;
+                background-color: #efefef;
+                color: #292929;
+                text-align: center;
+            }
+            button {
+                width: 98px;
+                min-height: 40px;
+                background-color: #e0e0e0;
+                border-color: #444444;
+                border-radius: 3px;
+                color: #292929;
+            }
+            button:focus {
+                border-color: darkred;
+                background-color: rgba(255, 123, 149, 0.5);
+                transition: 0.5s;
+                outline: none;
+            }
+            button:active {
+                border-color: crimson;
+            }
+            button:hover {
+                border-color: crimson;
+                background-color: rgba(255, 123, 149, 0.5);
+            }
+
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background-color: #444444;
+                    color: #efefef;
+                }
+                button {
+                    background-color: #575757;
+                    border-color: #444444;
+                    color: #efefef;
+                }
+                button:focus {
+                    border-color: darkred;
+                    background-color: rgba(220, 20, 60, 0.5);
+                }
+                button:active {
+                    border-color: crimson;
+                }
+                button:hover {
+                    border-color: crimson;
+                    background-color: rgba(220, 20, 60, 0.1);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>Convert to:</div>
+        <button id="conv-to-json-schema">JSON Schema</button>
+        <button id="conv-to-ts">pure TypeScript</button>
+        <button id="conv-to-graph-ql">GraphQL</button>
+        <button id="conv-to-proto3">Protobuf3</button>
+        <script src="popup.js"></script>
+    </body>
+</html>
