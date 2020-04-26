@@ -46,6 +46,7 @@
 
     const btnElJsonSchema = document.getElementById('conv-to-json-schema');
     const btnElTs         = document.getElementById('conv-to-ts');
+    const btnElCs         = document.getElementById('conv-to-cs');
     const btnElGraphQl    = document.getElementById('conv-to-graph-ql');
     const btnElProto3     = document.getElementById('conv-to-proto3');
 
@@ -55,6 +56,10 @@
 
     btnElTs.addEventListener('click', (event) => {
         sendText(text => tynder.generateTypeScriptCode(tynder.compile(text)));
+    });
+
+    btnElCs.addEventListener('click', (event) => {
+        sendText(text => tynder.generateCSharpCode(tynder.compile(text)));
     });
 
     btnElGraphQl.addEventListener('click', (event) => {
