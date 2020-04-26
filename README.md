@@ -9,7 +9,7 @@ Schema and data model generation made easier with [Tynder](https://github.com/sh
 
 * Converts the schema from the Tynder schema definition (TypeScript + extended syntax) selected in the browser to:
     * JSON Schema
-    * pure TypeScript
+    * pure TypeScript (Strip extended syntax)
     * C# (experimental)
     * Protocol Buffers 3 (experimental)
     * GraphQL (experimental)
