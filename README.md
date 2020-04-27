@@ -13,6 +13,7 @@ Schema and data model generation made easier with [Tynder](https://github.com/sh
     * C# (experimental)
     * Protocol Buffers 3 (experimental)
     * GraphQL (experimental)
+* The converted schema is written to the clipboard.
 
 ![screen](https://github.com/shellyln/tynder-chrome-extension/blob/master/docs/screen.png)
 
